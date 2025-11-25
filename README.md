@@ -37,27 +37,7 @@ Document ingestion pipeline for PDFs, text, markdown
 
 RAG is used by the knowledge agent to fetch and ground responses.  
 
-Architecture Diagram
-┌──────────────────────────────┐
-                   │        User Query             │
-                   └───────────────┬──────────────┘
-                                   │
-                        ┌──────────▼───────────┐
-                        │    Orchestrator      │
-                        └──────────┬───────────┘
-                                   │
-             ┌─────────────────────┴─────────────────────┐
-             │                                           │
-  ┌──────────▼─────────┐                       ┌─────────▼──────────┐
-  │   Planner Agent     │                       │  RAG Retrieval      │
-  └──────────┬──────────┘                       └─────────┬──────────┘
-             │                                            │
-  ┌──────────▼─────────┐                       ┌──────────▼──────────┐
-  │  Task Breakdown     │                       │ Vector Search/Embed │
-  └──────────┬──────────┘                       └─────────┬──────────┘
-             │                                            │
-                        ┌──────────▼───────────┐
-                        │     LLM Client        │
-                        │ (Gemini / Mock LLM)  │
-                        └──────────────────────┘
+
+
+                       
 
