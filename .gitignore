@@ -1,4 +1,6 @@
-echo ".env" >> .gitignore
-echo ".venv/" >> .gitignore
-echo "__pycache__/" >> .gitignore
-echo ".DS_Store" >> .gitignore
+.env
+ops_agent/.env
+.venv/
+__pycache__/
+chroma_db/
+*.sqlite3
