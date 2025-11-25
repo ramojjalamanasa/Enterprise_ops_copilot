@@ -23,7 +23,29 @@ Natural language reasoning
 Step-by-step planning
 Extractive + generative QA
 Code generation
-Document understanding.
+Document understanding.                   ┌──────────────────────────────┐
+                   │        User Query             │
+                   └───────────────┬──────────────┘
+                                   │
+                        ┌──────────▼───────────┐
+                        │    Orchestrator      │
+                        └──────────┬───────────┘
+                                   │
+             ┌─────────────────────┴─────────────────────┐
+             │                                           │
+  ┌──────────▼─────────┐                       ┌─────────▼──────────┐
+  │   Planner Agent     │                       │  RAG Retrieval      │
+  └──────────┬──────────┘                       └─────────┬──────────┘
+             │                                            │
+  ┌──────────▼─────────┐                       ┌──────────▼──────────┐
+  │  Task Breakdown     │                       │ Vector Search/Embed │
+  └──────────┬──────────┘                       └─────────┬──────────┘
+             │                                            │
+                        ┌──────────▼───────────┐
+                        │     LLM Client        │
+                        │ (Gemini / Mock LLM)  │
+                        └──────────────────────┘
+
 
 **Retrieval-Augmented Generation (RAG)**
 
@@ -36,6 +58,7 @@ Embeddings generated using Gemini embedding models
 Document ingestion pipeline for PDFs, text, markdown
 
 RAG is used by the knowledge agent to fetch and ground responses.  
+
 
 
 
