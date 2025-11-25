@@ -1,0 +1,26 @@
+[
+  {
+    "id": "T-0001",
+    "service": "payments",
+    "summary": "API latency is high",
+    "priority": "P1",
+    "created_at": "2025-11-24T18:22:56.673711+00:00",
+    "status": "OPEN"
+  },
+  {
+    "id": "T-0002",
+    "service": "payments",
+    "summary": "Test ticket for evaluation",
+    "priority": "P1",
+    "created_at": "2025-11-24T21:11:10.926093+00:00",
+    "status": "OPEN"
+  },
+  {
+    "id": "T-0003",
+    "service": "payments",
+    "summary": "Incident on payments service. User said: Create a P1 ticket for the payments service because API latency is high.",
+    "priority": "P1",
+    "created_at": "2025-11-24T21:11:10.927755+00:00",
+    "status": "OPEN"
+  }
+]
